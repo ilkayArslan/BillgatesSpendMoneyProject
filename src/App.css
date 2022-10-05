@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+#money {
+    background: linear-gradient(#2ecc71, #1abc9c);
+    font-size: 32px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sellbtn {
+    background: linear-gradient(#f53b82, #f53b57);
+    border: #f53b82;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sellbtn:focus {
+    box-shadow: 0px 0px 10px #f53b57 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.buybtn {
+    background: linear-gradient(#2ecc71, #1abc9c);
+    border: #f53b82;
 }
 
-.App-link {
-  color: #61dafb;
+.buybtn:focus {
+    box-shadow: 0px 0px 10px #2ecc71;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.centered {
+    padding: 0px 100px !important;
+}
+
+.fixNav {
+    position: sticky;
+    z-index: 555;
+    width: 100%;
+    margin: auto;
+    top: 0px;
+}
+
+.buybtn:active {
+    box-shadow: 0px 0px 15px #f53b82 !important;
+}
+
+.sellbtn:active {
+    box-shadow: 0px 0px 15px #2ecc71 !important;
+}
+
+.buybtn:disabled,
+.sellbtn:disabled {
+    background: grey !important;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    font-weight: 600;
+    margin: 0;
+
+
+}
+
+ul li {
+    margin: auto;
 }
